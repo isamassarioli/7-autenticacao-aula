@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterLink } from '@angular/router';
-import { HasPendingChanges } from '../guards/pending-changes.guard';
+// import { HasPendingChanges } from '../guards/pending-changes.guard';
 
 @Component({
   selector: 'app-form-edicao',
@@ -9,7 +9,8 @@ import { HasPendingChanges } from '../guards/pending-changes.guard';
   templateUrl: './form-edicao.html',
   styleUrl: './form-edicao.css',
 })
-export class FormEdicao implements HasPendingChanges {
+// export class FormEdicao implements HasPendingChanges {
+export class FormEdicao {
   nome = '';
   observacao = '';
   salvo = false;
@@ -27,8 +28,8 @@ export class FormEdicao implements HasPendingChanges {
       'Conteúdo marcado como salvo. Agora você pode sair da rota sem confirmação.';
   }
 
-  hasPendingChanges(): boolean {
-    const temConteudo = this.nome.trim() !== '' || this.observacao.trim() !== '';
-    return temConteudo && !this.salvo;
-  }
+  // hasPendingChanges(): boolean {
+  //   const temConteudo = this.nome.trim() !== '' || this.observacao.trim() !== '';
+  //   return temConteudo && !this.salvo;
+  // }
 }
