@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-// import { Login } from './login/login';
+import { Login } from './login/login';
 // import { Dashboard } from './dashboard/dashboard';
 import { ExemploArmazenamento } from './exemplo-armazenamento/exemplo-armazenamento';
 // import { authActivateGuard } from './guards/auth-activate-guard';
@@ -10,9 +10,9 @@ import { ExemploArmazenamento } from './exemplo-armazenamento/exemplo-armazename
 // import { FormEdicao } from './form-edicao/form-edicao';
 
 export const routes: Routes = [
-  // { path: '', pathMatch: 'full', redirectTo: 'login' },
+  { path: '', pathMatch: 'full', redirectTo: 'login' },
   { path: '', pathMatch: 'full', redirectTo: 'armazenamento' },
-  // { path: 'login', component: Login },
+  { path: 'login', component: Login },
   // { path: 'dashboard', component: Dashboard },
   // { path: 'dashboard', component: Dashboard, canActivate: [authActivateGuard] },
   /** /{
